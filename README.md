@@ -26,12 +26,14 @@ Find out the ip address of the attackers system
 
 
 ## OUTPUT:
+<img width="681" height="447" alt="01-ifconfig" src="https://github.com/user-attachments/assets/ec3ea49f-aa7e-4426-9784-e3e657b195ab" />
 
-<img width="681" height="447" alt="image" src="images/01-ifconfig.jpg" />
+
 Invoke msfconsole:
 ## OUTPUT:
 
-<img width="945" height="572" alt="image" src="images/02-msfconsole.jpg" />
+<img width="945" height="572" alt="02-msfconsole" src="https://github.com/user-attachments/assets/d2e1579e-6fc6-4589-a6a8-fd1e54d6cb40" />
+
 
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 
@@ -53,14 +55,16 @@ scan the targets with the command db_nmap as follows.
 msf > db_nmap 10.210.109.149/24
 ## OUTPUT:
 
-<img width="1742" height="458" alt="image" src="images/04-db-nmap.jpg" />
+<img width="1742" height="458" alt="04-db-nmap" src="https://github.com/user-attachments/assets/0a730ea6-abbf-4864-83d7-29527f77f72a" />
+
 
 
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules.
 cd /usr/share /metasploit-framework/modules/auxiliary
 kali > ls -l
 ## OUTPUT:
-<img width="946" height="722" alt="image" src="images/05-auxiliary-modules.jpg" />
+<img width="946" height="722" alt="05-auxiliary-modules" src="https://github.com/user-attachments/assets/504acc9d-c60e-491f-86bf-bd78bae18702" />
+
 
 
 
@@ -91,7 +95,8 @@ db_nmap -sV -sC -p 3306 10.210.109.149
 Use the search option to look for an auxiliary module to scan and enumerate the MySQL database.
 search type:auxiliary mysql
 ## OUTPUT:
-<img width="681" height="447" alt="image" src="images/08-mysql-enumeration.jpg" />
+<img width="681" height="447" alt="08-mysql-enumeration" src="https://github.com/user-attachments/assets/c1afe5e2-0926-4ebb-a49d-cba26bac30b8" />
+
 
 use the auxiliary/scanner/mysql/mysql_version module by typing the module name or associated number to scan MySQL version details.
 use 11
