@@ -27,11 +27,11 @@ Find out the ip address of the attackers system
 
 ## OUTPUT:
 
-<img width="681" height="447" alt="image" src="https://github.com/user-attachments/assets/360c08c9-7182-40af-9735-4f5f225ff342" />
+<img width="681" height="447" alt="image" src="images/01-ifconfig.jpg" />
 Invoke msfconsole:
 ## OUTPUT:
 
-<img width="945" height="572" alt="image" src="https://github.com/user-attachments/assets/65e6e564-e394-4a8d-b171-2988623e1ce4" />
+<img width="945" height="572" alt="image" src="images/02-msfconsole.jpg" />
 
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 
@@ -53,14 +53,14 @@ scan the targets with the command db_nmap as follows.
 msf > db_nmap 10.210.109.149/24
 ## OUTPUT:
 
-<img width="1742" height="458" alt="image" src="https://github.com/user-attachments/assets/cb34ff92-16c6-4676-a6e7-cdfb53f2a54c" />
+<img width="1742" height="458" alt="image" src="images/04-db-nmap.jpg" />
 
 
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules.
 cd /usr/share /metasploit-framework/modules/auxiliary
 kali > ls -l
 ## OUTPUT:
-<img width="946" height="722" alt="image" src="https://github.com/user-attachments/assets/e495ff2d-ac5a-4ceb-ab2b-95e5d86c4c28" />
+<img width="946" height="722" alt="image" src="images/05-auxiliary-modules.jpg" />
 
 
 
@@ -91,7 +91,7 @@ db_nmap -sV -sC -p 3306 10.210.109.149
 Use the search option to look for an auxiliary module to scan and enumerate the MySQL database.
 search type:auxiliary mysql
 ## OUTPUT:
-<img width="681" height="447" alt="image" src="https://github.com/user-attachments/assets/360c08c9-7182-40af-9735-4f5f225ff342" />
+<img width="681" height="447" alt="image" src="images/08-mysql-enumeration.jpg" />
 
 use the auxiliary/scanner/mysql/mysql_version module by typing the module name or associated number to scan MySQL version details.
 use 11
